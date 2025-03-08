@@ -1,0 +1,268 @@
+-> Activity_main.xmlfile 
+   - - - - - - - - - - -
+ <?xml version="1.0" encoding="utf-8"?> 
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:id="@+id/main" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:background="@color/white" 
+    android:orientation="horizontal" 
+    tools:context=".MainActivity"> 
+ 
+    <TextView 
+        android:id="@+id/head" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="@string/calculator" 
+        android:textAlignment="center" 
+        android:textColor="@color/black" 
+        android:textSize="40sp" 
+        android:textStyle="bold" 
+        android:minWidth="300dp" 
+        app:layout_constraintBottom_toBottomOf="parent" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        app:layout_constraintVertical_bias="0.02" 
+        tools:ignore="MissingConstraints" /> 
+    <TextView 
+        android:id="@+id/tx1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:minWidth="250dp" 
+        android:text="Enter First Number" 
+        android:textColor="@color/black" 
+        android:textSize="64px" 
+        android:background="#b0fd87" 
+        android:textStyle="normal" 
+        android:textAlignment="center" 
+ 
+        app:layout_constraintTop_toTopOf="@+id/head" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        app:layout_constraintBottom_toBottomOf="parent" 
+        app:layout_constraintVertical_bias="0.130" 
+        tools:ignore="MissingConstraints" /> 
+    <TextView 
+        android:id="@+id/tx2" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Enter Ssecond Number" 
+        android:textSize="64px" 
+        android:background="#fdf887" 
+        android:textColor="@color/black" 
+        android:textStyle="normal" 
+        android:textAlignment="center" 
+        android:orientation="vertical" 
+ 
+        app:layout_constraintTop_toTopOf="@+id/head" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        app:layout_constraintBottom_toBottomOf="parent" 
+        app:layout_constraintVertical_bias="0.280" 
+        tools:ignore="MissingConstraints" /> 
+ 
+    <EditText 
+        android:id="@+id/ed1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_margin="95sp" 
+        android:minWidth="250dp" 
+        android:text="" 
+        android:textColor="@color/black" 
+        android:textAlignment="center" 
+        android:textSize="25sp" 
+        android:textStyle="italic" 
+        app:layout_constraintBottom_toBottomOf="parent" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        app:layout_constraintHorizontal_bias="0.580" 
+        app:layout_constraintStart_toStartOf="parent" 
+ 
+        app:layout_constraintTop_toTopOf="parent" 
+        app:layout_constraintVertical_bias="0.1" 
+        
+tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTarge
+ tSizeCheck" /> 
+ 
+    <EditText 
+        android:id="@+id/ed2" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_margin="95sp" 
+        android:minWidth="250dp" 
+        android:text="" 
+        android:textColor="@color/black" 
+        android:textAlignment="center" 
+        android:textSize="25sp" 
+ 
+        android:textStyle="bold" 
+        app:layout_constraintBottom_toBottomOf="parent" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" 
+        app:layout_constraintVertical_bias="0.30" 
+        
+tools:ignore="MissingConstraints,SpeakableTextPresentCheck,TouchTarge
+ tSizeCheck" /> 
+    <TextView 
+        android:id="@+id/result" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:text="Result will display here" 
+        android:textStyle="bold" 
+        android:textSize="25sp" 
+        android:textColor="@color/black" 
+        android:background="#c1fff8 " 
+        android:textAlignment="center" 
+        android:layout_margin="50sp" 
+        android:minWidth="250dp" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" 
+        app:layout_constraintVertical_bias="0.45" 
+        app:layout_constraintBottom_toBottomOf="parent" 
+        tools:ignore="MissingConstraints" 
+        /> 
+    <Button 
+        android:id="@+id/b1" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:text="Addition" 
+        android:textSize="20sp" 
+        android:textStyle="normal" 
+        android:layout_margin="90dp" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" 
+        app:layout_constraintVertical_bias="0.54" 
+        app:layout_constraintBottom_toBottomOf="parent" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        tools:ignore="MissingConstraints" 
+        /> 
+    <Button 
+        android:id="@+id/b2" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:text="Subtraction" 
+        android:textSize="20sp" 
+        android:textStyle="normal" 
+        android:layout_margin="90dp" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" 
+        app:layout_constraintVertical_bias="0.66" 
+        app:layout_constraintBottom_toBottomOf="parent" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        tools:ignore="MissingConstraints" 
+        /> 
+    <Button 
+        android:id="@+id/b3" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:text="@string/multiplication" 
+        android:textSize="20sp" 
+        android:textStyle="normal" 
+        android:layout_margin="90dp" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" 
+        app:layout_constraintVertical_bias="0.772" 
+        app:layout_constraintBottom_toBottomOf="parent" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        tools:ignore="MissingConstraints" 
+        /> 
+    <Button 
+        android:id="@+id/b4" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:text="Division" 
+        android:textSize="20sp" 
+        android:textStyle="normal" 
+        android:layout_margin="90dp" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" 
+        app:layout_constraintVertical_bias="0.89" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        app:layout_constraintBottom_toBottomOf="parent" 
+        tools:ignore="MissingConstraints" 
+        /> 
+    <Button 
+        android:id="@+id/clear" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:text="Clear all" 
+        android:textColor="#123485" 
+        android:textSize="20sp" 
+        android:textStyle="normal" 
+        android:layout_margin="90dp" 
+        app:layout_constraintStart_toStartOf="parent" 
+        app:layout_constraintTop_toTopOf="parent" 
+        app:layout_constraintVertical_bias="1.01" 
+        app:layout_constraintBottom_toBottomOf="parent" 
+        app:layout_constraintEnd_toEndOf="parent" 
+        tools:ignore="MissingConstraints" 
+        /> 
+ 
+</androidx.constraintlayout.widget.ConstraintLayout> 
+
+
+-> Mainactivity.kt file  (.kt "means in Mainavtivity file codes are writen by kotlin language") 
+   - - - - - - - - - -
+package com.example.calculaterproject 
+ 
+import android.widget.TextView 
+import android.widget.EditText 
+import android.widget.Button 
+import android.os.Bundle 
+import androidx.activity.enableEdgeToEdge 
+import androidx.appcompat.app.AppCompatActivity 
+import androidx.core.view.ViewCompat 
+import androidx.core.view.WindowInsetsCompat 
+ 
+class MainActivity : AppCompatActivity() { 
+    override fun onCreate(savedInstanceState: Bundle?) { 
+        super.onCreate(savedInstanceState) 
+        enableEdgeToEdge() 
+        setContentView(R.layout.activity_main) 
+        val head: TextView= findViewById(R.id.head) 
+        val result: TextView= findViewById(R.id.result) 
+        val tx1: TextView= findViewById(R.id.tx1) 
+        val tx2: TextView= findViewById(R.id.tx2) 
+        val ed1: EditText= findViewById(R.id.ed1) 
+        val ed2: EditText= findViewById(R.id.ed2) 
+        val b1: Button= findViewById(R.id.b1) 
+        val b2: Button= findViewById(R.id.b2) 
+        val b3: Button= findViewById(R.id.b3) 
+        val b4: Button= findViewById(R.id.b4) 
+        val clear: Button= findViewById(R.id.clear) 
+        b1.setOnClickListener { 
+            val r1 = ed1.text.toString().toInt() + 
+ed2.text.toString().toInt() 
+            result.text= r1.toString() 
+        } 
+        b2.setOnClickListener { 
+            val r2 = ed1.text.toString().toInt() - 
+ed2.text.toString().toInt() 
+            result.text= r2.toString() 
+        } 
+        b3.setOnClickListener { 
+            val r3 = ed1.text.toString().toInt() * 
+ed2.text.toString().toInt() 
+            result.text= r3.toString() 
+        } 
+        b4.setOnClickListener { 
+            val r4 = ed1.text.toString().toInt() / 
+ed2.text.toString().toInt() 
+            result.text= r4.toString() 
+        } 
+        clear.setOnClickListener { 
+            ed1.text.clear() 
+            ed2.text.clear() 
+            result.text=" " 
+        } 
+    }
+}
+
+
+    } 
+}
